@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Assignment 10.7</title>
+</head>
+    <body>
+        <div class ="container">
+            <form id="js-form">
+                <label for="state-input">State Code Input</label>
+                <input type="text" id="state-input" name="state-input" required>
+                <label for="max-items-input">Max Search Items</label>
+                <input type="number" id="max-items-input" name="max-items-input" value="10" min="1" max="50" required>
+                <input type="submit">
+            </form>
+            <p id="js-error-message" class="error-message"></p>
+            <section id="results" class="hidden">
+                <h2>Search results</h2>
+                <ul id="results-list">   
+                </ul>
+            </section>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
